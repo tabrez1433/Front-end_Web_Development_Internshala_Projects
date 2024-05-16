@@ -1,0 +1,145 @@
+main {
+  margin-bottom: 5rem;
+}
+
+/* heading */
+.heading {
+  margin: auto;
+  color: #051622;
+  font-size: 48px;
+  text-shadow: 4px 2px 6px #051622;
+}
+
+/* when error/invalidation occurs */
+.error {
+  border: 1px solid red !important;
+}
+
+.input {
+  border-radius: 4px !important;
+}
+
+/* login form */
+#loginForm {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* show password and remember me */
+#showPassword,
+.rememberMe {
+  cursor: pointer;
+}
+
+/* login button */
+button.loginBtn {
+  font-weight: bold;
+  border: 1px solid #051622;
+  color: #051622;
+  border-radius: 12px 0;
+  width: 100%;
+}
+
+button.loginBtn:hover {
+  border: 1px solid #172D13;
+}
+
+/* medium and above devices */
+/* ipad Mini or from 768px to 819px*/
+@media screen and (min-width:768px) and (max-width:819px) {
+  main div.row {
+    margin-top: 50px;
+    margin-bottom: 160px;
+  }
+
+  h2.heading {
+    margin-top: 25px !important;
+  }
+}
+
+@media screen and (min-width:1024px) and (orientation: landscape) {
+  main div.row {
+    margin-bottom: -13px;
+  }
+
+  .heading {
+    margin-top: -12px;
+  }
+}
+
+/* ipad Air or from 820px to 911px*/
+@media screen and (min-width:820px) and (max-width:911px) {
+  main div.row {
+    margin-top: 65px;
+    margin-bottom: 281px;
+  }
+
+  h2.heading {
+    margin-top: 45px !important;
+  }
+}
+
+@media screen and (min-width:1180px) and (orientation: landscape) {
+  main div.row {
+    margin-top: 45px;
+    margin-bottom: 98px;
+  }
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) and (orientation: portrait) {
+  main div.row {
+    margin-top: 100px;
+    margin-bottom: 440px;
+    padding: 10px;
+  }
+
+  form {
+    height: 300px;
+  }
+
+  form button {
+    margin-top: 20px;
+  }
+
+  h2.heading {
+    margin-top: 95px !important;
+  }
+}
+
+/* iPad Pro landscape */
+@media screen and (min-width:1366px) and (orientation: landscape) {
+  main div.row {
+    margin-top: 62px;
+    margin-bottom: 246px;
+  }
+
+  form button {
+    margin-top: 10px;
+  }
+
+  h2.heading {
+    margin-top: 45px !important;
+  }
+
+}
+
+/* Surface Pro 7 or from 912px to 1023px*/
+@media screen and (min-width:912px) and (max-width:1023px) {
+  main div.row {
+    margin-top: 90px;
+    margin-bottom: 360px
+  }
+
+  form {
+    height: 295px;
+  }
+
+  form button {
+    margin-top: 15px;
+  }
+
+  h2.heading {
+    margin-top: 85px !important;
+  }
+}

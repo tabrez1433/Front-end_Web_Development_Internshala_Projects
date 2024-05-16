@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* The CSS :root pseudo-class selector is used to select the highest-level parent of a given specification. */
+ /* CSS gradients let you display smooth transitions between two or more specified colors */
+:root{
+    --gradient: linear-gradient(to top left, rgb(245, 207, 207), rgb(107, 37, 37));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2{
+    border: 5px solid black;
+    background-color: rgb(250, 235, 215);
+    font-style: italic;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+.card-container {
+    /* CSS grid layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: var(--gradient);
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    justify-items: center;
+    
+}
+
+/* The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. */
+.card{
+    display: flex;
+    flex-direction: column;
+ }
+
+img{
+    width: 240px;
+    height: 200px;
+}
+
+button{
+    margin: 25px 0;
+    padding: 3px;
+    border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* The :hover selector CSS pseudo-class is used to style elements when the mouse hovers over them. It can be used on every element. */
+/* CSS transitions allows you to change property values smoothly, over a given duration. */
+button:hover{
+    background-color: rgb(219, 192, 36);
+    font-size: 18px;
+    transform: translate(0,5px);
+    transition: all 1s ease;
+
+}

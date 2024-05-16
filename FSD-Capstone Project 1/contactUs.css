@@ -1,0 +1,102 @@
+/* heading */
+.heading {
+  color: #051622;
+  font-size: 48px;
+  text-shadow: 4px 2px 6px #051622;
+}
+
+img.image,
+.card {
+  height: 380px;
+}
+
+.inpfield {
+  border-radius: 4px !important;
+}
+
+/* submit button */
+button.submit {
+  font-weight: bold;
+  border: 1px solid #051622;
+  color: #051622;
+  border-radius: 12px 0;
+  width: 100%;
+}
+
+.submit:hover {
+  border: 1px solid #172D13;
+}
+
+/* medium devices */
+/* ipad Mini or from 768px to 819px*/
+@media screen and (min-width:768px) and (max-width:819px) {
+  h2 {
+    font-size: 46px !important;
+    margin-top: 20px !important;
+  }
+
+  div.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* ipad Air or from 820px to 911px*/
+@media screen and (min-width:820px) and (max-width:911px) {
+  h2 {
+    font-size: 46px !important;
+    margin-top: 70px !important;
+  }
+
+  div.container {
+    margin-top: 75px;
+    margin-bottom: 137px;
+  }
+}
+
+/* Surface Pro 7 or from 912px to 1023px*/
+@media screen and (min-width:912px) and (max-width:1023px) {
+  h2 {
+    font-size: 46px !important;
+    margin-top: 76px !important;
+  }
+
+  div.container {
+    margin-top: 95px;
+    margin-bottom: 300px;
+  }
+}
+
+/* Surface Pro 7 landscape */
+@media screen and (min-width:1368px) and (orientation: landscape) {
+  div.container {
+    margin-top: 50px;
+    margin-bottom: 61px;
+  }
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) and (orientation: portrait) {
+  h2 {
+    font-size: 52px !important;
+    margin-top: 100px !important;
+  }
+
+  div.container {
+    margin-top: 120px;
+    margin-bottom: 369px;
+  }
+}
+
+/* iPad Pro landscape */
+@media screen and (min-width:1366px) and (orientation: landscape) {
+  h2 {
+    font-size: 46px !important;
+    margin-top: 20px !important;
+  }
+
+  div.container {
+    margin-top: 65px;
+    margin-bottom: 141px;
+  }
+}

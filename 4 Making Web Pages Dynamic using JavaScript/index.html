@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head: define the head portion of the document which contains information related to the document or metadata(information about data) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the web page -->
+    <title>JavaScript Calculator</title>
+    <!-- bootstrap css Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Internal CSS Style-->
+    <style>
+        /* ".border-bottom" as a class selector */
+        .border-bottom {
+            width: 9.5em;
+        }
+
+        .brd {
+            border: 1px solid rgba(148, 109, 18, 0.267);
+            background-color: bisque;
+        }
+
+        /*The :hover selector is used to select elements when you mouse over them. */
+        /* The !important rule in CSS is used to add more importance to a property/value than normal. */
+        button:hover {
+            cursor: pointer !important;
+            background-color: green !important;
+            color: rgb(31, 13, 6) !important;
+        }
+
+        .reset:hover, .reset2:hover {
+            cursor: pointer !important;
+            background-color: red !important;
+            color: rgb(31, 13, 6) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--main container -->
+    <div class="container-lg mt-5 ">
+        <!-- Heading -->
+        <h1 class="text-center m-auto border-bottom mb-4">JavaScript Calculator</h1>
+
+        <div class="row justify-content-center align-items-center g-5 mb-5 ">
+            <!-- input box for first Operand-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input1" class="form-label">Number- 1</label>
+                <input type="number" id="input1" class="form-control num1 brd" placeholder="Operand 1" />
+            </div>
+            <!-- select option for operators -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input2" class="form-label">Operator</label>
+                <select id="input2" class="form-select operate brd" aria-label="Default select example">
+                    <option selected id="selects">Select Operator</option>
+                    <option value="+">Addition (+)</option>
+                    <option value="-">Subtraction (-)</option>
+                    <option value="*">Multiplication (*)</option>
+                    <option value="/">Division (/)</option>
+                    <option value="%">Modulus (%)</option>
+                </select>
+            </div>
+            <!-- input box for second Operand-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input3" class="form-label">Number- 2</label><br>
+                <input type="number" id="input3" class="form-control num2 brd" placeholder="Operand 2" />
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <!-- button for calculation process -->
+            <button type="submit" class="w-50 btn btn-primary mb-4" onclick="calculate()">Calculate</button>
+            <!-- reset button -->
+            <button type="reset" class="w-50 btn btn-secondary reset mb-4" onclick="reset()">Reset</button>
+        </div>
+
+        <!-- readonly input box for output -->
+        <div class="col-lg-6 col-md-6 col-sm-12 d-grid m-auto">
+            <label for="input4" class="form-label">Result:</label>
+            <input type="text" class="form-control result brd" id="input4" readonly />
+        </div>
+        <hr>
+        
+        <!-- @@@@@@@@@@@@@@@@@@@ Discount Calculator @@@@@@@@@@@@@@@@@@@@ -->
+        
+        <h1 class="text-center m-auto border-bottom mb-4">Discount Calculator</h1>
+        
+        <div class="row justify-content-center align-items-center g-5 mb-5">
+            <!-- input box for Amount -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input5" class="form-label">Amount (₹):</label><br>
+                <input type="number" id="input5" class="form-control price brd" placeholder="Enter the amount" />
+            </div>
+            <!-- input box for discount -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input6" class="form-label">Discount (%):</label><br>
+                <input type="number" id="input6" class="form-control discount brd" placeholder="Enter the number" />
+            </div>
+            
+            <!-- discount button -->
+            <div class="d-flex">
+                <!-- button for discount calculation process -->
+                <button type="submit" class="w-50 btn btn-primary mb-4" onclick="discount()">Discount</button>
+                <!-- discount reset button -->
+                <button type="reset" class="w-50 btn btn-secondary reset2 mb-4" onclick="reset2()">Reset</button>
+            </div>
+            
+            <!-- readonly input box for discount output -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input7" class="form-label">Discounted Amount (₹):</label>
+                <input type="text" class="form-control afterDiscounted brd" id="input7" readonly />
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="input8" class="form-label">Discount (₹):</label>
+                <input type="text" class="form-control discounted brd" id="input8" readonly />
+            </div>
+        </div>
+
+    </div>
+    <!-- Bootstrap JavaScript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

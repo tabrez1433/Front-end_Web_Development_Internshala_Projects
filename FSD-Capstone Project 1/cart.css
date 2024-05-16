@@ -1,0 +1,218 @@
+body {
+    background-color: #6bb77c17 !important;
+}
+
+/* heading of cart */
+div.headCart {
+    margin-bottom: 15px !important;
+}
+
+/* heading */
+.heading {
+    color: #051622;
+    text-shadow: 2px 1px 4px #051622;
+}
+
+/* cart image */
+.row img {
+    height: 180px !important;
+}
+
+/* count section */
+.order {
+    width: 40% !important;
+    margin: auto;
+    top: 10%;
+}
+
+/* item count */
+.count {
+    margin: auto;
+    height: 29px;
+    margin-bottom: 1px;
+}
+
+/* - and + button */
+.click {
+    background-color: #051622;
+    height: 24px;
+    color: #198754;
+    margin: auto;
+    padding-top: 11px;
+    border-radius: 5px !important;
+}
+
+.click:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* trash */
+.trash {
+    background-color: #198754 !important;
+    color: #051622;
+    margin: auto;
+    padding: 20px 10px;
+    border-radius: 8px;
+}
+
+.trash:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+/* checkout button */
+button.checkout {
+    font-weight: bold;
+    border: 1px solid #051622;
+    color: #051622;
+    border-radius: 12px 0;
+    margin: auto;
+}
+
+button.checkout:hover {
+    border: 1px solid #172D13;
+}
+
+/* card */
+.card {
+    height: 280px !important;
+    margin: 12px;
+}
+
+/* product title */
+.card-title {
+    margin-left: -8px;
+}
+
+/* card 1 */
+.card1 {
+    margin-bottom: 15px;
+}
+
+
+/* galaxy fold and lower Portrait */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    div.order {
+        top: 12%;
+        display: block;
+        margin-left: -21px;
+        left: 4%;
+    }
+
+    .count {
+        left: 26%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p.price {
+        margin: auto;
+    }
+
+    img {
+        width: 94px !important;
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+
+    .laptopMid {
+        margin-left: 25px;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* medium and above devices */
+/* ipad Mini or from 768px to 819px*/
+@media screen and (min-width:768px) and (max-width:819px) {
+    main {
+        margin-top: 123px;
+        margin-bottom: 178px;
+    }
+
+    div.card {
+        width: 275px;
+        right: 11%;
+    }
+
+    .card1 {
+        width: 375px !important;
+    }
+}
+
+@media screen and (min-width:1024px) and (orientation: landscape) {
+    main {
+        margin-top: 68px;
+        margin-bottom: 105px;
+    }
+}
+
+/* ipad Air or from 820px to 911px*/
+@media screen and (min-width:820px) and (max-width:911px) {
+    main {
+        margin-top: 160px;
+        margin-bottom: 297px;
+    }
+
+    div.card {
+        width: 300px;
+        right: 16%;
+    }
+
+    .card1 {
+        width: 375px !important;
+    }
+}
+
+@media screen and (min-width:1180px) and (orientation: landscape) {
+    main {
+        margin-top: 100px;
+        margin-bottom: 125px;
+    }
+}
+
+/* Surface Pro 7 or from 912px to 1023px*/
+@media screen and (min-width:912px) and (max-width:1023px) {
+    main {
+        margin-top: 254px;
+        margin-bottom: 392px;
+    }
+
+    div.card {
+        width: 391px;
+        right: 32%;
+    }
+}
+
+/* Surface Pro 7 landscape */
+@media screen and (min-width:1368px) and (orientation: landscape) {
+    main {
+        margin-top: 110px !important;
+        margin-bottom: 207px !important;
+    }
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) and (orientation: portrait) {
+    main {
+        margin-top: 236px;
+        margin-bottom: 535px;
+    }
+
+    div.card {
+        width: 345px;
+        right: 10%;
+    }
+
+    .card1 {
+        width: 475px !important;
+    }
+}
+
+/* iPad Pro landscape */
+@media screen and (min-width:1366px) and (orientation: landscape) {
+    main {
+        margin-bottom: 329px;
+    }
+}

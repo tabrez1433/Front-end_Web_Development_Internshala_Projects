@@ -1,0 +1,67 @@
+ /* universal selector used for all the element */
+/* box-sizing: border-box - to include the padding and border in an element's total width and height */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body selector used to modify the body element */
+body {
+    background-image: url('https://images.unsplash.com/photo-1528735000313-039ec3a473b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D');
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* ".container" as a class selector */
+.container {
+    /* The CSS position property defines the position of an element in a document. This property works with the left, right, top, bottom and z-index properties to determine the final position of an element on a page. There are five values the position property can take. */
+    position: relative;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* img as a descendant child selector */
+.container img {
+    width: 60vw;
+    height: 75vh;
+    padding: auto;
+}
+
+.btnContainer {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.btnContainer button {
+    width: 20vw;
+    border: 2px solid rgb(77, 28, 119);
+    background-color: #fff;
+    font-size: 16px;
+    color: rgb(77, 28, 119);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 16px 16px 0px 0px;
+    opacity: .9;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    margin: -1.5px;
+}
+
+/* The :hover selector is used to select elements when you mouse over them. */
+.btnContainer button:hover {
+    background-color: rgb(182, 136, 66);
+    opacity: .7;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(251, 251, 207), rgb(140, 24, 24));
+}
+
+
+
+.container {
+    padding: 12px;
+}
+
+h1 {
+    border: 2px solid black;
+    text-align: center;
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0;
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+p {
+    border-bottom: 3px groove rgba(245, 245, 245, 0.6);
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16.5px;
+}
+
+/* "#para" as a id selector */
+#para {
+    border: none;
+}

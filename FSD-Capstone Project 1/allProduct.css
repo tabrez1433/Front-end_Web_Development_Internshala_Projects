@@ -1,0 +1,101 @@
+/* universal tag */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body  */
+body {
+    background-color: #6bb77c17 !important;
+}
+
+/* heading */
+.heading {
+    color: #051622;
+    font-size: 48px;
+    text-shadow: 4px 2px 6px #051622;
+}
+
+/* cards */
+.card {
+    width: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card .card-img-top {
+    height: 160px;
+    border: 2px solid #172D13 !important;
+    border-radius: 20px 4px;
+}
+
+/* cart button */
+.card .btnCart {
+    font-weight: 700;
+    border: 1px solid #051622;
+    color: #051622;
+    border-radius: 12px 0;
+    font-size: 12px;
+}
+
+.card .btnCart:hover {
+    border: 1px solid #172D13;
+}
+
+/* cart icon */
+.cart {
+    background: linear-gradient(#D76F30, #172D13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 1px #051622);
+}
+
+/* via the Chrome developer tools */
+
+/* tabs */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .card {
+        width: 14rem;
+    }
+}
+
+/* galaxy fold and lower Portrait */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    .card {
+        width: 7.9rem !important;
+        height: 350px !important;
+    }
+
+    .card .btnCart {
+        font-weight: bold;
+        border: 1px solid #051622;
+        color: #051622;
+        border-radius: 12px 0;
+        font-size: 9px;
+    }
+
+    .card-text {
+        height: 100px;
+        overflow-y: hidden;
+    }
+
+    i.fa-cart-shopping {
+        display: none;
+    }
+}
+
+/* large device(i.e. Ipad pro, Next Hub etc.*/
+@media only screen and (min-width: 992px) and (orientation: portrait) {
+    .card {
+        width: 10rem !important;
+    }
+}
+
+/* Nest Hub Max Portrait */
+@media screen and (min-width:1228px) and (-webkit-min-device-pixel-ratio:0) {
+    .card {
+        width: 12rem;
+    }
+}
